@@ -8,8 +8,8 @@ RUN apt-get update \
 VOLUME /tmp
 ENV JAVA_TOOL_OPTIONS -Dfile.encoding=UTF8
 # Run as non-root
-RUN addgroup --disabled-password -gid 1001 -q slotex
-RUN adduser --system --no-create-home -uid 1001 --disabled-password -q --group slotex
-RUN mkdir -p /opt && chown -R slotex:slotex /opt
+RUN groupadd -g 999 slotex && \
+    useradd -r -u 999 -g slotex slotex
+RUN mkdir -p /app && chown -R slotex:slotex /app
 RUN mkdir /logs && chown -R slotex:slotex /logs
 USER slotex

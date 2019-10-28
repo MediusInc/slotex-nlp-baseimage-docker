@@ -15,7 +15,7 @@ TAG=latest
 docker build -t pkpslotex/slotex-nlp-baseimage-docker:$TAG .
 ```
 
-## Project Founding
+## Project Funding
 
 |  <img alt="Public Scholarship, Development, Disability and Maintenence Fund of the Republic of Slovenia" src="https://slotex.si/images/logo-sklad.svg" height="65" /> |  <img alt="Ministry of Education, Science and Sport" src="https://slotex.si/images/logo-mizs.svg" height="65"/> |  <img alt="European Social Fund" src="https://slotex.si/images/logo-pkp.svg" height="65"/> |
 | --- | --- | --- |
